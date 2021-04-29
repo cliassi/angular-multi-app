@@ -22,7 +22,7 @@ const providers = []
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: providers,
   bootstrap: [AppComponent]
 })
 export class AppModule { }
@@ -32,7 +32,7 @@ export class App1SharedModule{
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: AppModule,
-      providers: []
+      providers: providers
     }
   }
 }
